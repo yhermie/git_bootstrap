@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+</head>
+<body>
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong>SAFE VOYAGE</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destination</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Inquiries
+              </a>
+              </div>
+      </div>
+</nav> 
+<!-- Carousel -->
+<div class="carousel slide" data-bs-ride="carousel" id="heroSlider">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <div class="hero" style="background-image:url('./Image/img1.jpg')">
+          <div class="hero-overlay">
+           <h1>Want to have a safe and comfortable travel?</h1>
+            <p>Book now and enjoy an amazing trip</p>
+          </div>
+         </div>
+      </div>
+    
+      <div class="carousel-item"data-bs-interval="1000">
+        <div class="hero"style="background-image:url('./Image/img2.jpg')">
+          <div class="hero-overlay">
+        <h1>Book your train tickets as well</h1>
+        <p>A lot of amazing offers and deals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Navs and tabs -->
+  <div class="src-wrapper shadow">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <button class="nav-link active" id="flight-tab"data-bs-toggle="tab" data-bs-target="#flight-tab-pane" >Bus</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link " id="hotel-tab" data-bs-toggle="tab" data-bs-target="#hotel-tab-pane" >Train</button>
+      </li>
+    </ul>
+    
+    <div class="tab-content pt-4">
+      <div class="tab-pane fade show active" id="flight-tab-pane">
+       <form action="#">
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" 
+            placeholder="Pick-up stop"/>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control mb-3" placeholder="Drop-off stop"/>
+          </div>
+          <div class="col-md-6">
+            <input type="date" class="form-control mb-3" placeholder="Departure"/>
+          </div>
+          <div class="col-md-6">
+            <input type="number" class="form-control mb-3" placeholder="No. of seats"min="1"/>
+          </div>
+        </div>
+       <div class="d-grid">
+    <input type="submit" class="btn btn-danger" value="Proceed"/>
+    </div>
+      
+    </form>
+      </div>
+      <div class="tab-pane fade" id="hotel-tab-pane">
+        <form action="#">
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control mb-3" 
+              placeholder="Pick-up station"/>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control mb-3" 
+                placeholder="Destination"/>
+              </div>
+        
+            <div class="col-md-6">
+              <input type="date" class="form-control mb-3" placeholder="Arrival date"/>
+            </div>
+            
+          </div>
+         <div class="d-grid">
+      <input type="submit" class="btn btn-warning" value="Proceed"/>
+      </div>
+        
+      </form>
+      </div>
+    </div>
+    </div>
+    <!-- cards -->
+<section class="py-5" id="destination">
+  <div class="container">
+      <h2 class="Topheading mb-5">Top Destination</h2>
+      <div class="row g-5">
+          <div class="col-md-4">
+              
+              <div class="card">
+                  <img src="./Image/img6.jpg" class="rounded-5">
+                  <div class="card-body">
+                      <h5>Nigeria</h5>
+                      <p>The next flight is on 28th Jan.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              
+              <div class="card">
+                  <img src="./Image/img4.jpg" class="rounded-5" >
+                  <div class="card-body">
+                      <h5>Carribean Island</h5>
+                      <p>The next flight is on 28th Jan.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card">
+                  <img src="./Image/img5.jpg" class="rounded-5" >
+                  <div class="card-body">
+                      <h5>Costa Rica</h5>
+                      <p>The next flight is on 28th Jan.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+<!-- Flex -->
+<section class="py-5" id="request">
+  <div class="container">
+      <div class="d-md-flex align-items-center justify-content-between bg-light p-5 rounded-5">
+  <div>
+      <h2>Additional Request</h2>
+      <p>Would you like to enjoy our additional offers like a travel guide? Send us a request.</p>
+  </div>
+  <button class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#reqModal" >Place Request</button>
+      </div>
+  </div>
+  </section>
+<!-- Modal -->
+<div class="modal fade" id="reqModal">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h3>Special Request</h3>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body"><form action="#">
+              <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Subject">
+                  <label for="floatingInput">Subject</label>
+                </div>
+                <textarea class="form-control" placeholder="Description" style="height:250px"></textarea>
+          </form></div>
+      <div class="modal-footer"><button class="btn btn-primary">Send request</button></div>
+      </div>
+  </div>
+  </div>
+<!-- FAQ -->
+<section class="py-5">
+<h2  class="text-center">Frequently asked questions</h2>
+<div class="container">
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+       What happens when i mistakenly book twice
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You will have to reach out to our customer care which will help resolve the error</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        What happens in a case where I miss the travel
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You'll have to let us know beforehand so another day can be fixed for you. Note that there is no refund of money</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        What if i already booked a ticket but wuld like to change the destination
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You'll have to reach out to a customer care representative for more information</div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<div class="bg-secondary text-dark py-5">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="text-danger">SAFE VOYAGE</h3>
+        <p >Book easy,travel comfortably</p>
+      <pclass="text-light"> Contact us on +2348115571152,+2349027014389 <br> Or email us at safevoyage@yahoo.com</p>
+      </div>
+      <div class="col-md-2">
+        <h4 class="text-danger">Pages</h4>
+        <ul class="list-unstyled">
+          <li>About us</li>
+          <li>Contact us</li>
+          
+         
+        </ul>
+      </div>
+      
+    <div class="col-md-2">
+      <h4 class="text-danger">Booking</h4>
+      <ul class="list-unstyled">
+        <li>Bus ticket</li>
+        <li>Train ticket</li>
+       
+  </div>
+</div>
+<p class="border-top border-secondary py-5 my-5 text-danger">
+  copyrights &copy;2023 SAFE VOYAGE All right reserved
+</p>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
+</body>
+</html>
